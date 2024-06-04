@@ -1,11 +1,12 @@
-# Use the official Python image from the Docker Hub
+ # Use the official Python image from the Docker Hub
 FROM python:3.9-slim
 
 # Set the working directory in the container
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY . /app/jenkins-test-webervice
+
+COPY . .
 RUN ls -a
 # Install Flask
 RUN pip install flask
@@ -14,4 +15,4 @@ RUN pip install flask
 EXPOSE 5000
 
 # Define the command to run the application
-CMD ["python3", "app.py"]
+CMD ["python3", "jenkins-test-webervice/app.py"]
