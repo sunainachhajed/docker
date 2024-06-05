@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy the current directory contents into the container at /app
 
-COPY jenkins-test-webervice .
+COPY .  .
 RUN ls -a
 # Install Flask
 RUN pip install flask
