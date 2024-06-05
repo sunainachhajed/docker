@@ -15,4 +15,4 @@ RUN pip install flask
 EXPOSE 5000
 
 # Define the command to run the application
-CMD ["python3", "jenkins-test-webervice/app.py"]
+CMD ["python3", "app.py"]
